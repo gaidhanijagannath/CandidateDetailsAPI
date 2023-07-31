@@ -67,13 +67,13 @@ public class CandidateService {
 
     }
 
-    public Page<CandidateDetails> SearchCandidateWithPaginationAndSorting(int offset,int pageSize, String parameter,String by){
+   /* public Page<CandidateDetails> SearchCandidateWithPaginationAndSorting(int offset,int pageSize, String parameter,String by){
 
         return candidateDetailsRepository
                 .findAll(PageRequest.of(offset,pageSize)
                         .withSort(Sort.by(Sort.Direction.ASC,parameter)));
 
-    }
+    }*/
 
     //searching
     public List<CandidateDetails> searchCandidate(String query){
