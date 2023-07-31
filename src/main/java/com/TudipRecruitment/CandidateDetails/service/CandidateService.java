@@ -81,4 +81,8 @@ public class CandidateService {
         return  candidateDetailsRepository.searchCandidateJPA(query);
     }
 
+    public CandidateDetails updateCandidateDetails(CandidateDetails candidateUpdateRequest) {
+
+        return candidateDetailsRepository.save(candidateUpdateRequest);
+    }
 }
