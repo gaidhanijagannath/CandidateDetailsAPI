@@ -80,7 +80,7 @@ public class CandidateDetailsController {
     }
 
 
-    @GetMapping(value = "/paging/search" )
+   /* @GetMapping(value = "/paging/search" )
     @ResponseStatus(code = HttpStatus.OK)
     public Page<CandidateDetails> searchCandidateWithPagination(@RequestParam("offSet") int offset,
                                                                          @RequestParam("pageSize") int sizeofPage,
@@ -88,7 +88,7 @@ public class CandidateDetailsController {
                                                                          @RequestParam("query") String query){
 
         return candidateService.SearchCandidateWithPaginationAndSorting(offset,sizeofPage,sortBy,query);
-    }
+    }*/
 
     @GetMapping(value = "/search" )
     @ResponseStatus(code = HttpStatus.OK)
