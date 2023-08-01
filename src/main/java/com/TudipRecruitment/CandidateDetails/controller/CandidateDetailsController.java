@@ -98,10 +98,11 @@ public class CandidateDetailsController {
 
     }
 
-    @PutMapping("/updateCandidate")
+    @PatchMapping("/updateCandidate")
     public CandidateDetails updateCandidate(@RequestBody CandidateDetails candidateUpdateRequest){
 
         return candidateService.updateCandidateDetails(candidateUpdateRequest);
+
     }
 
 
